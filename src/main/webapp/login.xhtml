@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: Aend
+  Date: 07.04.2022
+  Time: 12:08
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Login</title>
+</h:head>
+
+<h:body>
+    <h:form id="loginform">
+        <h4>Log in with your user account</h4>
+        <h:panelGrid columns="2">
+
+            <h:outputText value="User name"></h:outputText>
+            <h:inputText id="loginName"></h:inputText>
+
+            <h:outputText value="Password"></h:outputText>
+            <h:inputSecret id="password"></h:inputSecret>
+
+            <h:commandButton id="loginBtn" value="Login"></h:commandButton>
+        </h:panelGrid>
+
+    </h:form>
+</h:body>
+
+</html>
