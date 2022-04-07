@@ -14,11 +14,13 @@
 
 <h:head>
     <title>Login</title>
+    <h:outputStylesheet name="CSS/style.css"></h:outputStylesheet>
 </h:head>
 
 <h:body>
-    <h:form id="loginform">
-        <h4>Log in with your user account</h4>
+    <h:form id="loginform" styleClass="myform">
+        <h1 class="centered">Welcome</h1>
+        <h4>Please log in with your user account</h4>
         <h:panelGrid columns="2">
 
             <h:outputText value="User name"></h:outputText>
@@ -27,9 +29,10 @@
             <h:outputText value="Password"></h:outputText>
             <h:inputSecret id="password"></h:inputSecret>
 
-            <h:commandButton id="loginBtn" value="Login"></h:commandButton>
+
         </h:panelGrid>
 
+            <h:commandButton styleClass="btn" id="loginBtn" value="Login"></h:commandButton>
     </h:form>
 </h:body>
 
